@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../appClient.css">
+
+  <!-- Navigation Bar -->
+  <div id="navigationBar"></div>
+</head>
+
+<body style="background-image: linear-gradient(darkgrey,black)">
+<!-- Sponsor Bar -->
+<h1 class="title">Recommandé</h1>
+<div class="container">
+  <div class="columns is-multiline" id="sponsorList"></div>
+  <div id="sponsorContainer"></div>
+</div>
+
+
+<!-- Liste des salons de coiffure -->
+<div class="container">
+  <h1 class="title">Liste des salons de coiffure:</h1>
+  <div id="listeSalons" class="columns is-multiline"></div>
+</div>
+
+<!-- Map Section -->
+<div class="container">
+  <h1 class="title" style="color: white">Map</h1>
+  <div id="map" style="height: 400px;"></div> <!-- Conteneur pour la carte -->
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script src="accueil.js" type="module"></script>
+
+<!-- Load Mapbox library -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+
+</body>
+
+</html>

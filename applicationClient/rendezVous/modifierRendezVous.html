@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prendre un Rendez-vous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <div id="navigationBar"></div>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="card reservation-card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Réservation
+                </p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p id="coiffeur"></p>
+                    <p id="salon"></p>
+                    <p id="address"></p>
+                    <p id="style"></p>
+                    <p id="description"></p>
+                    <p id="duree"></p>
+                </div>
+            </div>
+        </div>
+        <p></br></p>
+        <h1 class="title">Modifier votre Rendez-vous</h1>
+        <div class="field">
+            <label class="label">Date:</label>
+            <input class="input" type="date" id="appointmentDate">
+        </div>
+
+        <div class="field">
+            <label class="label">Heure:</label>
+            <div class="select">
+                <select id="appointmentTime">
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Barbier:</label>
+            <div class="select">
+                <select id="barber">
+                    <!-- Options chargées dynamiquement avec JavaScript -->
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Type de coiffure:</label>
+            <div class="select">
+                <select id="hairstyle">
+                    <!-- Options chargées dynamiquement avec JavaScript -->
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <button class="button is-link" id="submit">Confirmer</button>
+        </div>
+    </div>
+</section>
+</body>
+<script src="/updateRendezVous.js" type="module"></script>
+<div id="footer"></div>
+</html>

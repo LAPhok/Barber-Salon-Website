@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Details</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../appClient.css">
+  <div id="navigationBar"></div>
+</head>
+
+<body>
+  <!-- Bouton -->
+  <div class="container">
+    <button id="addToFavoritesButton" class="button is-primary">Ajouter aux favoris</button>
+    <button id="removeFromFavoritesButton" class="button is-danger is-hidden">Retirer de mes favoris</button>
+  </div>
+  
+  <!-- Salon Details Section -->
+  <section class="section">
+    <div class="container">
+      <div class="box" id="salonDetails">
+        <!-- Dynamic salon details will be inserted here -->
+      </div>
+    </div>
+    <div class="container">
+      <button id="reservationButton" class="button is-info">Prendre un rendez-vous</button>
+    </div>
+
+  </section>
+  <!-- Photo Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title">Photos de nos clients</h2>
+      <div id="salonPhotosContainer" class="columns is-multiline">
+        <!-- Photos will be inserted here by salonDetails.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Include your JavaScript file -->
+  <script src="salonDetails.js" type="module"></script>
+</body>
+<div id="footer"></div>
+
+</html>

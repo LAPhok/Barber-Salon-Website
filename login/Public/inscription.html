@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Inscription</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/appClient.css">
+    <div id="navigationBar">
+        <!-- The navigation bar will be inserted here -->
+    </div>
+</head>
+<body style="background-image: linear-gradient(darkgrey,black)">
+
+<section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="box" style=" margin: auto;">
+                <div class="columns is-vcentered shadow">
+                    <div class="column is-6">
+                        <img style="max-width: 100%" src="/inscription.png">
+                    </div>
+                    <div class="column is-6 p-5">
+                        <h3 class="has-text-left is-size-4">
+                            <strong>Bienvenue,
+                                <br>
+                                Inscrivez-vous pour continuer
+                            </strong>
+                        </h3>
+                        <form id="registrationForm" method="POST" action="http://localhost:3000/register-client">
+                            <!-- Email Address -->
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control">
+                                    <input id="email" class="input is-left" type="email" name="email" required autofocus placeholder="e123456@email.com">
+                                </div>
+                            </div>
+                            <!-- nom -->
+                            <div class="field">
+                                <label class="label" for="nom">Nom</label>
+                                <div class="control">
+                                    <input id="nom" class="input is-left" type="text" name="nom" required autofocus placeholder="Nom">
+                                </div>
+                            </div>
+                            <!-- prenom -->
+                            <div class="field">
+                                <label class="label" for="prenom">Prenom</label>
+                                <div class="control">
+                                    <input id="prenom" class="input is-left" type="text" name="prenom" required autofocus placeholder="Prenom">
+                                </div>
+                            </div>
+                            <!-- Password -->
+                            <div class="field">
+                                <label class="label" for="motDePasse">Mot de passe</label>
+                                <div class="control">
+                                    <input id="motDePasse" class="input" type="password" name="motDePasse" required autocomplete="current-password" placeholder="Mot de passe">
+                                </div>
+                            </div>
+                            <!-- numeroTel -->
+                            <div class="field">
+                                <label class="label" for="numeroTelephone">Numero de telephone</label>
+                                <div class="control">
+                                    <input id="numeroTelephone" class="input is-left" type="text" name="numeroTelephone" placeholder="999-999-9999">
+                                </div>
+                            </div>
+                            <!-- Checkboxes -->
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="Client" id="option1" value="Client"> Client
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="Coiffeur" id="option2" value="Coiffeur"> Coiffeur
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Hidden inputs for salonId and horairesTravail -->
+                            <div class="field" id="DivsalonId" hidden="hidden">
+                                <label class="label" for="salonId">Salon</label>
+                                <div class="control">
+                                    <input class="input is-left" id="salonId" name="salonId" value="" placeholder="1">
+                                </div>
+                            </div>
+                            <div class="field" id="DivhorairesTravail" hidden="hidden">
+                                <label class="label" for="horairesTravail">Votre Horaire de Travail</label>
+                                <div class="control">
+                                    <input class="input is-left" id="horairesTravail" name="horairesTravail" value="" placeholder="10:00 - 19:00">
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="control">
+                                <a href="connexion.html">
+                                    <button type="submit" class="button is-info">S'inscrire</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="inscription.js" type="module"></script>
+<div id="footer">
+    <!-- The footer will be inserted here -->
+</div>
+</html>

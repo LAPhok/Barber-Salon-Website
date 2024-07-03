@@ -1,0 +1,93 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.navbar {
+    box-shadow: 0 2px 3px rgb(16, 36, 130);
+}
+
+.custom-color {
+    background-color: rgb(19, 41, 149);
+}
+
+.navbar-item:hover {
+    background-color: rgb(19, 41, 149);
+}
+
+.navbar-item.text-white {
+    color: white;
+}
+
+.title.is-3 {
+    color: #4a4a4a;
+}
+
+.input {
+    border-radius: 20px;
+}
+
+.icon.is-small.is-left {
+    left: 5px; /* Align icon inside input */
+}
+
+.profile-image {
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    width: 256px; /* Example width, must be equal to height for a perfect circle */
+    height: 256px; /* Example height, must be equal to width for a perfect circle */
+}
+
+.equal-height-columns {
+    display: flex;
+}
+
+.equal-height-columns > .column {
+    min-height: 100%; /* This ensures that the column's height won't exceed the parent's height */
+}
+
+.title-margin-adjust {
+    margin-top: 0; /* Adjust the value as needed */
+}
+
+#chartContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.calendar-container th{
+    background-color: lightskyblue;
+}
+
+.horaire-container {
+    margin-top: 20px;
+}
+
+.horaire-container .table {
+    border-collapse: collapse;
+    border: none;
+}
+
+.horaire-container th {
+    border: none;
+    background-color: lightpink;
+}
+
+.horaire-container td {
+    border: none;
+}
+
+/* styles.css */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espace entre les images */
+    justify-content: center;
+    padding: 20px;
+}
+
+#gallery img {
+    width: 150px; /* Largeur fixe pour toutes les images */
+    height: 150px; /* Hauteur fixe pour garder les images uniformes */
+    object-fit: cover; /* Assure que les images couvrent la zone définie sans être déformées */
+}

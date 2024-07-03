@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/appClient.css">
+    <div id="navigationBar">
+        <!-- The navigation bar will be inserted here -->
+    </div>
+</head>
+<body style="background-image: linear-gradient(darkgrey,black)">
+
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="box" style=" margin: auto;">
+                <div class="columns is-vcentered shadow">
+                    <div class="column is-6">
+                        <img style="max-width: 100%" src="image-login.png">
+                    </div>
+                    <div class="column is-6 p-5">
+                        <!-- Validation Errors -->
+                        <h3 class="has-text-left is-size-4">
+                            <strong>Bonjour,
+                                <br>
+                                Connectez-vous pour continuer
+                            </strong>
+                        </h3>
+                        <form id="loginForm" action="/login" method="POST"> <!-- Modifier l'action pour pointer vers la route de connexion -->
+                            <!-- Email Address -->
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control">
+                                    <input id="email" class="input is-left" style="background-color: lightgrey;" type="email" name="email" required autofocus placeholder="e123456@email.com">
+
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="field">
+                                <label class="label" for="password">Mot de passe</label>
+                                <div class="control">
+                                    <input id="password" class="input" style="background-color: lightgrey;" type="password" name="motDePasse" required autocomplete="current-password" placeholder="Password">
+                                </div>
+                                <p class="control has-text-left is-danger">
+                                    <a class="underline has-text-danger" href="/MDPoublier.html">Mot de passe oublié ?</a>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="Client" id="option1" value="Client"> Client
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="Coiffeur" id="option2" value="Coiffeur"> Coiffeur
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- captcha -->
+                            <input type="hidden" name="url" value="">
+
+                            <!-- Remember Me (not done)
+                            <div class="field">
+                                <div class="block">
+                                    <label for="remember_me" class="checkbox">
+                                        <input id="remember_me" type="checkbox" name="remember">
+                                        <span class="ml-2">Se souvenir de moi</span>
+                                    </label>
+                                </div>
+                            </div>
+                            -->
+                            <div class="control">
+                                <a href="/AccueilClient">
+                                    <button class="button is-info" id="SubmitBtn">Se connecter</button>
+                                </a>
+
+                            </div>
+                            <div class="columns has-text-centered">
+                                <p class="control has-text-centered">
+                                    <a class="underline" href="/inscription">S'inscrire</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="footer">
+    <!-- The footer will be inserted here -->
+</div>
+</body>
+<script type="module" src="/connexion.js"></script>
+
+</html>

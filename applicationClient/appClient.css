@@ -1,0 +1,140 @@
+.navbar {
+    box-shadow: 0 2px 3px rgb(16, 36, 130);
+}
+
+.custom-color {
+    background-color: rgb(19, 41, 149);
+}
+
+.navbar-item:hover {
+    background-color: rgb(19, 41, 149);
+}
+
+.navbar-item.text-white {
+    color: white;
+}
+
+/* rendezVous.html */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/*rendezVous.js*/
+.reservation-card {
+    margin-bottom: 20px; /* Espacer les cartes entre elles */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajouter une ombre pour un effet de profondeur */
+    border-radius: 10px; /* Bordures arrondies pour adoucir le design */
+}
+
+.card-header {
+    background-color: #f5f5f5; /* Un fond légèrement gris pour le header */
+    border-top-left-radius: 10px; /* Arrondir les coins supérieurs */
+    border-top-right-radius: 10px;
+}
+
+.card-header-title {
+    color: #333; /* Une couleur de texte sombre pour contraster avec le fond */
+}
+
+.card-content {
+    padding: 20px; /* Ajouter de l'espace autour du contenu interne */
+}
+
+.content p {
+    margin-bottom: 10px; /* Espacer les paragraphes */
+    line-height: 1.6; /* Améliorer la lisibilité des lignes */
+}
+
+.content p strong {
+    color: #0056b3; /* Une couleur distinctive pour les éléments importants */
+}
+
+
+/* salonDetails.html */
+.modal {
+    display: none;
+}
+
+.modal.is-active {
+    display: flex;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 400px;
+}
+
+.modal-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* profil */
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.title {
+    color: #363636;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-card .field:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.form-card .control {
+    border-radius: 5px;
+}
+
+.form-card .button.is-primary {
+    width: 100%;
+}
